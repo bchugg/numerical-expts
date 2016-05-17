@@ -6,8 +6,9 @@ MathJax.Hub.Config({
   },
   TeX: {
     Macros: {
-      RR: "{\\mathbb{R}}",
-      pd: "{\\partial}"
+      rr: "{\\mathbb{R}}",
+      pd: "{\\partial}",
+      bx: "{\\textbf{x}}"
     }
   }
 });
