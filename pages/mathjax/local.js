@@ -6,9 +6,12 @@ MathJax.Hub.Config({
   },
   TeX: {
     Macros: {
+      // GLOBAL CONSTANTS
       rr: "{\\mathbb{R}}",
       pd: "{\\partial}",
-      bx: "{\\textbf{x}}"
+      bx: "{\\textbf{x}}",
+      bo: "{\\mathcal{O}}",
+      bu: "{\\textbf{u}}"
     }
   }
 });
