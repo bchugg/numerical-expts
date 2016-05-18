@@ -6,6 +6,7 @@
 	</script>
 	<script type="text/javascript" src="mathjax/local.js"></script>
 	<script src="CDPDE.js"></script>
+	<link rel="stylesheet" type="text/css" href="../views/CDPDE.css">
 </head>
 <body>
 <!-- LOCAL CONSTANTS --> 
@@ -17,6 +18,13 @@ $
 \newcommand{\me}{\mathcal{E}}
 \newcommand{\g}{G(i,j)}
 $
+
+<!-- Header TODO, abstract global header-->
+<ul class="header">
+	<li><a href="main.html">Home</a></li>
+	<li><a href="main.html">Projects</a></li> <!-- TODO, make drop-down menu-->
+	<li style="float:right"><a href="main.html">About</a></li>
+</ul>
 
 <h1>The Convection Diffusion PDE</h1>
 <h2>Problem Statement</h2>
@@ -99,9 +107,14 @@ Where ones occur at all the corresponding rows of $\textbf{u}_{i,j,\tau+1}$ with
 </p>
 
 <h1>Optimizations</h1>
-Note that our update matrix $A$ is incredibly sparse. In fact,
+<p>Note that our update matrix $A$ is incredibly sparse. In fact,</p>
 
 <h1>Results</h1>
-
 </body>
+
+<!-- Footer TODO, abstract global header-->
+<ul class="footer">
+	<li>Page maintained by<a href="main.html">Ben Chugg</a></li>
+</ul>
+
 </html>
