@@ -1,11 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title> CDPDE | Formulation </title>
-	<script type="text/javascript"
-  		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
-	<script type="text/javascript" src="../mathjax/local.js"></script>
-	<script src="CDPDE.js"></script>
 	<link rel="stylesheet" type="text/css" href="../../views/CDPDE.css">
 </head>
 <body>
@@ -19,14 +15,9 @@ $
 \newcommand{\g}{G(i,j)}
 $
 
-<!-- Header TODO, abstract global header-->
-<ul class="header">
-	<li><a href="main.html">Home</a></li>
-	<li><a href="main.html">Projects</a></li> <!-- TODO, make drop-down menu-->
-	<li style="float:right"><a href="main.html">About</a></li>
-</ul>
+<?php include('../includes/header.php'); ?>
 
-<h1>The Convection Diffusion PDE</h1>
+<?php include('../includes/CDPDE.php'); ?>
 <h2>Mathematical Formulation</h2>
 <p>To spatially discretize the PDE, we use the centred difference approximations to the first and second derivatives, i.e., 
 \[\left.\frac{df(x,t)}{dx}\right|_{x=x_0}=\frac{f(x_0+h,t)-f(x_0-h,t)}{2h}+\bo(h^2)\approx\frac{f(x_0+h,t)-f(x_0-h,t)}{2h} \]

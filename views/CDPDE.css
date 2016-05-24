@@ -20,54 +20,6 @@ h2 {
 }
 
 
-/* Header */
-
-.header {
-	width: 100%;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-}
-
-.header li {
-	float: left;
-	background-color: #333;
-	display: inline;
-}
-
-.header li a {
-	display: block;
-	padding: 14px;
-	color: white;
-	text-align: left;
-	text-decoration: none;
-}
-
-.header li a:hover {
-	background-color: #111;
-}
-
-/* footer */
-
-.footer {
-	bottom: 0;
-	width: 100%;
-	list-style-type: none;
-	margin: 0;
-	padding: 10px;
-	overflow: hidden;
-	background-color: #333;	
-	text-align: center;
-}
-
-.footer a {
-	color: white;
-	float: center;
-	text-decoration: underline;
-}
-
 /* Images */
 
 #sparseA {

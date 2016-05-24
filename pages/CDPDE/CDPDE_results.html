@@ -1,31 +1,17 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title> CDPDE | Results </title>
-	<script type="text/javascript"
-  		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
-	<script type="text/javascript" src="../mathjax/local.js"></script>
-	<script src="CDPDE.js"></script>
 	<link rel="stylesheet" type="text/css" href="../../views/CDPDE.css">
 </head>
 <body>
+<?php include('../includes/header.php'); ?>
 
-<!-- Header TODO, abstract global header-->
-<ul class="header">
-	<li><a href="main.html">Home</a></li>
-	<li><a href="main.html">Projects</a></li> <!-- TODO, make drop-down menu-->
-	<li style="float:right"><a href="main.html">About</a></li>
-</ul>
-
-<h1>The Convection Diffusion PDE</h1>
+<?php include('../includes/CDPDE.php'); ?>
 
 <h2>Results</h2>
 <p> We use the technical computing platform <a href="http://www.mathworks.com/products/matlab/">$\textit{Matlab}$</a> to implement our mathematical formulation of the problem. </p>
 </body>
 
-<!-- Footer TODO, abstract global header-->
-<p class="footer">
-	Page maintained by <a href="main.html">Ben Chugg</a>
-</p>
-
+<?php include('../includes/footer.php'); ?>
 </html>
