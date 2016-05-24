@@ -1,12 +1,12 @@
 <html>
 <head>
-	<title> Diffusion PDE </title>
+	<title> CDPDE | Formulation </title>
 	<script type="text/javascript"
   		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
-	<script type="text/javascript" src="mathjax/local.js"></script>
+	<script type="text/javascript" src="../mathjax/local.js"></script>
 	<script src="CDPDE.js"></script>
-	<link rel="stylesheet" type="text/css" href="../views/CDPDE.css">
+	<link rel="stylesheet" type="text/css" href="../../views/CDPDE.css">
 </head>
 <body>
 <!-- LOCAL CONSTANTS --> 
@@ -27,18 +27,6 @@ $
 </ul>
 
 <h1>The Convection Diffusion PDE</h1>
-<h2>Problem Statement</h2>
-<p>Mathematically, we can model a physical system undergoing convection and diffusion via the PDE, 
-\[\frac{\pd u(\bx,t)}{\pd t} =\nabla\cdot(D\nabla u(\bx,t))-\nabla\cdot(\vec{w}\,u(\bx,t)+R\] where $u:\rr^n\times t\longrightarrow \rr$ is the variable in which we're typically interested, $D$ is the diffusivity of $u$, and $\vec{w}:\rr^n\longrightarrow\rr$ describes the velocity of $u$. $R$ describes any sources or sinks of the system. We'll investigate the convection diffusion PDE in $\rr^2$ when $D$ is contact and where $\bx=\langle x,y\rangle$ and $\vec{w}=W\langle \cos(\theta),\sin(\theta)\rangle$. Furthermore, we'll assume that there are no sources or sinks, i.e., that $R\equiv0$ and that the diffusion of $u$ is constant so that $\nabla u\equiv 0$. Under these simplifications, the equation reduces to
-\begin{align}
-\frac{\pd u(\bx,t)}{\pd t}
-&=D\nabla^2u(\bx,t)-W\langle \cos\theta,\sin\theta\rangle\cdot\nabla u(\bx,t) \\
-&=D\left(\frac{\pd^2u(\bx,t)}{\pd x^2}+\frac{\pd^2u(\bx,t)}{\pd y^2}\right) - W\left(\cos(\theta)\frac{\pd u(\bx,t)}{\pd x}+\sin(\theta)\frac{\pd u(\bx,t)}{\pd y}\right) 
-\end{align}
-The initial condition of the above equation usually has the form
-\[u(\bx,0)=\sum_{i=1}^ka_i\exp(-s_i[(x-x_i)^2+(y-y_i)^2])\] 
-where $\{(x_i,y_i)\}_{i=1}^k$ are the initial positions of $u$, $s_i$ corresponds its initial intensity at each respective position and $s_i$ is the (inverse) width of the substance. We will solve the equation for $k=2$ and $(x_1,y_1)=(0.25,0.25)$, $(x_2,y_2)=(0.64,0.4)$ and with homogenous Dirichlet Boundary Conditions, $u(\bx,t)=0$ for $x\in\pd\Omega$.</p>
-
 <h2>Mathematical Formulation</h2>
 <p>To spatially discretize the PDE, we use the centred difference approximations to the first and second derivatives, i.e., 
 \[\left.\frac{df(x,t)}{dx}\right|_{x=x_0}=\frac{f(x_0+h,t)-f(x_0-h,t)}{2h}+\bo(h^2)\approx\frac{f(x_0+h,t)-f(x_0-h,t)}{2h} \]
@@ -106,15 +94,9 @@ u_{n_x,n_y,\tau+1}
 Where ones occur at all the corresponding rows of $\textbf{u}_{i,j,\tau+1}$ with $i\in\{1,n_y\}$ or $j\in\{1,n_x\}$. 
 </p>
 
-<h1>Optimizations</h1>
-<p>Note that our update matrix $A$ is incredibly sparse. In fact,</p>
-
-<h1>Results</h1>
-</body>
-
 <!-- Footer TODO, abstract global header-->
-<ul class="footer">
-	<li>Page maintained by<a href="main.html">Ben Chugg</a></li>
-</ul>
+<p class="footer">
+	Page maintained by <a href="main.html">Ben Chugg</a>
+</p>
 
 </html>

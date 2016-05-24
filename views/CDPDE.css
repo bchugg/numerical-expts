@@ -1,11 +1,21 @@
+/* constants */
+
 /* Body */
+
+body {
+	background-color: rgb(255,255,222);
+}
 
 h1 {
 	text-align: center;
 }
 
-body {
+p {
 	margin-right: 150px; 
+	margin-left: 150px;
+}
+
+h2 {
 	margin-left: 150px;
 }
 
@@ -13,8 +23,6 @@ body {
 /* Header */
 
 .header {
-	top: 0;
-	position: fixed;
 	width: 100%;
 	list-style-type: none;
 	margin: 0;
@@ -23,23 +31,13 @@ body {
 	background-color: #333;
 }
 
-.footer {
-	bottom: 0;
-	position: fixed;
-	width: 100%;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;	
-}
-
-li {
+.header li {
 	float: left;
 	background-color: #333;
+	display: inline;
 }
 
-li a {
+.header li a {
 	display: block;
 	padding: 14px;
 	color: white;
@@ -47,7 +45,36 @@ li a {
 	text-decoration: none;
 }
 
-li a:hover {
+.header li a:hover {
 	background-color: #111;
 }
+
+/* footer */
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+	background-color: #333;	
+	text-align: center;
+}
+
+.footer a {
+	color: white;
+	float: center;
+	text-decoration: underline;
+}
+
+/* Images */
+
+#sparseA {
+	width: 700px;
+	height: 500px;
+	display: block;
+	margin: auto;
+}
+
 

@@ -5,6 +5,7 @@ MathJax.Hub.Config({
     inlineMath: [['$','$'], ['\\(','\\)']], 
   },
   TeX: {
+    extensions: ["AMSmath.js, AMSsymbols.js"],
     Macros: {
       // GLOBAL CONSTANTS
       rr: "{\\mathbb{R}}",
