@@ -2,9 +2,7 @@
 <html>
 <head>
 	<title> CDPDE | Formulation </title>
-	<link rel="stylesheet" type="text/css" href="../../views/CDPDE.css">
 </head>
-<body>
 <!-- LOCAL CONSTANTS --> 
 $
 \newcommand{\ma}{\mathcal{A}}
@@ -14,10 +12,10 @@ $
 \newcommand{\me}{\mathcal{E}}
 \newcommand{\g}{G(i,j)}
 $
-
-<?php include('../includes/header.php'); ?>
-
+<body>
+<?php include('../includes/globalheader.php'); ?>
 <?php include('../includes/CDPDE.php'); ?>
+
 <h2>Mathematical Formulation</h2>
 <p>To spatially discretize the PDE, we use the centred difference approximations to the first and second derivatives, i.e., 
 \[\left.\frac{df(x,t)}{dx}\right|_{x=x_0}=\frac{f(x_0+h,t)-f(x_0-h,t)}{2h}+\bo(h^2)\approx\frac{f(x_0+h,t)-f(x_0-h,t)}{2h} \]
@@ -85,9 +83,8 @@ u_{n_x,n_y,\tau+1}
 Where ones occur at all the corresponding rows of $\textbf{u}_{i,j,\tau+1}$ with $i\in\{1,n_y\}$ or $j\in\{1,n_x\}$. 
 </p>
 
-<!-- Footer TODO, abstract global header-->
-<p class="footer">
-	Page maintained by <a href="main.html">Ben Chugg</a>
-</p>
+<?php include('../includes/globalfooter.php'); ?>
+</body>
+
 
 </html>

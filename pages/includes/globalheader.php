@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript"
-  		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
-	<script type="text/javascript" src="../mathjax/local.js"></script>
-	<script src="CDPDE.js"></script>
 	<link rel="stylesheet" type="text/css" href="../../views/headerfooter.css">
 </head>
 <body>
