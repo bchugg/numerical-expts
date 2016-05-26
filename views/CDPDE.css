@@ -2,33 +2,41 @@
 
 body {
 	background-color: rgb(255,255,222);
+	margin: 0;
 }
 
 h1 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-right: -10px;
 	text-align: center;
+	background-image: url("photos/convectiondiff.png");
+	color: white;
 }
 
 p {
-	margin-right: 180px; 
-	margin-left: 180px;
 	text-align: justify;
 }
 
-h2 {
+div {
 	margin-left: 180px;
+	margin-right: 180px;
+	padding: 1px;
 }
 
 /* Side navigation bar */
 
 .navbar {
 	list-style-type: none;
+	display: inline-block;
 	margin: 0;
 	padding: 0;
 	width: 150px;
 	background-color: #f1f1f1;
 	border: 1px solid #555;
+	position: sticky;
 	overflow: auto;
-	
+	float: left;
 }
 
 .navbar li {
@@ -54,10 +62,6 @@ h2 {
 	background-color: #555;
 	color: white;
 }	
-
-.navbar #active {
-	background-color: rgb(0,0,255);
-}
 
 
 /* Images */
