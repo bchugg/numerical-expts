@@ -1,63 +1,7 @@
 /* Header */
 
-body {
-	padding-top: 200px;
-}
-
-/*
-.header {
-	list-style-type: none;
-	padding: 0px;
-	overflow: hidden;
-	margin-top: -28px;
-	margin-right: -8px;
-	margin-left: -8px;
-	background-color: #333;
-	width: 110%;
-	position: fixed;
-}
-
-.header li {
-	float: left;
-}
-
-.header li:first-child {
-	margin-left: 180px;
-}
-
-.header li:last-child {
-	margin-right: 180px;
-}
-
-.header a {
-	display: block;
-	text-decoration: none;
-	color: white;
-	text-align: center;
-	padding: 20px 16px 14px 16px;
-}
-
-.header li a:hover {
-	background-color: #111;
-}
-
 /* Footer */
 
-/*
-.footer {
-	list-style-type: none;
-	padding: 10px;
-	overflow: hidden;
-	background-color: ;
-	text-align: center;
-	margin-bottom: -28px;
-	margin-left: -8px;
-	margin-right: -8px;
-	border-top: 1px solid #111;
-}
-
-.footer a {
-	color: green;
-	float: center;
-	text-decoration: underline;
+#footer {
+	margin-bottom: 0px;
 }
