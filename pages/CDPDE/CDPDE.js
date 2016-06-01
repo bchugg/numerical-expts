@@ -1,4 +1,0 @@
-var math = require('mathjs');
-
-
-

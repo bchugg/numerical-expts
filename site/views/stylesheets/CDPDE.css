@@ -1,7 +1,8 @@
 /* Body */
 
+/*
 body {
-	background-color: rgb(255,255,222);
+	background-color: rgb(204,204,204);
 	margin: 0;
 }
 
@@ -24,8 +25,10 @@ div {
 	padding: 1px;
 }
 
+
 /* Side navigation bar */
 
+/*
 .navbar {
 	list-style-type: none;
 	display: inline-block;
@@ -65,13 +68,15 @@ div {
 
 
 /* Images */
-
+/*
 #sparseA {
 	width: 700px;
 	height: 500px;
 	display: block;
 	margin: auto;
 }
+
+
 
 
 

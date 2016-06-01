@@ -1,5 +1,10 @@
 /* Header */
 
+body {
+	padding-top: 200px;
+}
+
+/*
 .header {
 	list-style-type: none;
 	padding: 0px;
@@ -38,6 +43,7 @@
 
 /* Footer */
 
+/*
 .footer {
 	list-style-type: none;
 	padding: 10px;

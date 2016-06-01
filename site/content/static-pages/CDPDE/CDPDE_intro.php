@@ -1,22 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title> CDPDE | Introduction </title>
-</head>
-<!-- LOCAL CONSTANTS --> 
-$
-\newcommand{\ma}{\mathcal{A}}
-\newcommand{\mb}{\mathcal{B}}
-\newcommand{\mc}{\mathcal{C}}
-\newcommand{\md}{\mathcal{D}}
-\newcommand{\me}{\mathcal{E}}
-\newcommand{\g}{G(i,j)}
-$
-<body>
-<?php include('../includes/globalheader.php'); ?>
-<?php include('../includes/CDPDE.php'); ?>
+	<title> Introduction - CDPDE | Numerics</title>
+	<?php include('../../includes/globalheader.php'); ?>
 
-<div>
+<?php include('../../includes/CDPDE.php'); ?>
+
+<div class="container">
 <h2>Problem Statement</h2>
 <p>Mathematically, we can model a physical system undergoing convection and diffusion via the PDE, 
 \[\frac{\pd u(\bx,t)}{\pd t} =\nabla\cdot(D\nabla u(\bx,t))-\nabla\cdot(\vec{w}\,u(\bx,t)+R\] where $u:\rr^n\times t\longrightarrow \rr$ is the variable in which we're typically interested, $D$ is the diffusivity of $u$, and $\vec{w}:\rr^n\longrightarrow\rr$ describes the velocity of $u$. $R$ describes any sources or sinks of the system. We'll investigate the convection diffusion PDE in $\rr^2$ when $D$ is contact and where $\bx=\langle x,y\rangle$ and $\vec{w}=W\langle \cos(\theta),\sin(\theta)\rangle$. Furthermore, we'll assume that there are no sources or sinks, i.e., that $R\equiv0$ and that the diffusion of $u$ is constant so that $\nabla u\equiv 0$. Under these simplifications, the equation reduces to
@@ -32,6 +22,5 @@ where $\{(x_i,y_i)\}_{i=1}^k$ are the initial positions of $u$, $s_i$ correspond
 </div>
 
 
-<?php include('../includes/globalfooter.php'); ?>
-</body>
+<?php include('../../includes/globalfooter.php'); ?>
 </html>

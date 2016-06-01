@@ -1,20 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title> CDPDE | Formulation </title>
-</head>
-<!-- LOCAL CONSTANTS --> 
-$
-\newcommand{\ma}{\mathcal{A}}
-\newcommand{\mb}{\mathcal{B}}
-\newcommand{\mc}{\mathcal{C}}
-\newcommand{\md}{\mathcal{D}}
-\newcommand{\me}{\mathcal{E}}
-\newcommand{\g}{G(i,j)}
-$
-<body>
-<?php include('../includes/globalheader.php'); ?>
-<?php include('../includes/CDPDE.php'); ?>
+	<?php include('../../includes/globalheader.php'); ?>
+
+<?php include('../../includes/CDPDE.php'); ?>
 
 <div>
 <h2>Mathematical Formulation</h2>
@@ -85,8 +75,6 @@ Where ones occur at all the corresponding rows of $\textbf{u}_{i,j,\tau+1}$ with
 </p>
 </div>
 
-<?php include('../includes/globalfooter.php'); ?>
-</body>
-
+<?php include('../../includes/globalfooter.php'); ?>
 
 </html>

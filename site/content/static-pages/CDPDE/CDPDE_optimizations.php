@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title> CDPDE | Optimizations </title>
-</head>
-<body>
-<?php include('../includes/globalheader.php'); ?>
-<?php include('../includes/CDPDE.php'); ?>
+	<?php include('../../includes/globalheader.php'); ?>
+	
+<?php include('../../includes/CDPDE.php'); ?>
 
 <div>
 <h2>Optimizations</h2>
@@ -13,5 +12,5 @@
 <img id="sparseA" src="../../data/CDPDE/sparsityofA" alt="SparseA">
 </div>
 
-<?php include('../includes/globalfooter.php'); ?>
+<?php include('../../includes/globalfooter.php'); ?>
 </html>
