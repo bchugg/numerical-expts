@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 	<?php include('bootstrap.php'); ?>
 	<?php include('mathjax.php'); ?>
-	<link rel="stylesheet" type="text/css" href="/~benchugg/num_expts/site/views/stylesheets/headerfooter.css">
+	<link rel="stylesheet" type="text/css" href="../../views/stylesheets/headerfooter.css">
 </head>
 <body style="padding-top:70px">
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -22,7 +22,7 @@
 			</li> 
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="/num_expts/site/content/static-pages/about.php">About</a></li>
+			<li><a href="/~benchugg/num_expts/site/content/static-pages/about.php">About</a></li>
 			<li><a href="/">My Index</a></li>
 		</ul>
 	</div>

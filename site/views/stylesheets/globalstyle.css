@@ -1,3 +1,12 @@
+/* UNIVERSAL STYLING TO BE APPLIED EVERYWHERE ON SITE */
+
 body {
 	padding-top: 100px;
+}
+
+/* Figures */
+
+figcaption {
+	text-align: center;
+	padding-bottom: 20px;
 }

@@ -1,6 +1,10 @@
 <!-- Continues parent tag, closes none -->
 <!DOCTYPE html>
 
+<!-- Stylesheets (Relative path is from static-pages) -->
+<link rel="stylesheet" type="text/css" href="../../../views/stylesheets/globalstyle.css">
+<link rel="stylesheet" type="text/css" href="../../../views/stylesheets/CDPDE.css">
+
 <!-- CDPDE Local Constants --> 
 $
 \newcommand{\ma}{\mathcal{A}}
@@ -19,4 +23,4 @@ $
 	<li><a href="../CDPDE/CDPDE_optimizations.php">Optimization</a></li>
 	<li><a href="../CDPDE/CDPDE_results.php">Results</a></li>
 </ul>
-</div>
+
